@@ -3,6 +3,7 @@ scenario:
   # Because we need to unregister our hosts with RHSM using the cleanup playbook we have to deviate from the default
   # test sequence provided by molecule, more details here: https://molecule.readthedocs.io/en/latest/configuration.html#scenario
   test_sequence:
+    - lint
     - destroy
     - dependency
     - create

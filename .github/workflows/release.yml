@@ -1,5 +1,5 @@
 ---
-name: Release Latest Version to Galaxy
+name: Release Latest Version to Ansible Galaxy
 
 on:
   push:

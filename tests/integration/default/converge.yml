@@ -3,6 +3,7 @@
 - name: Converge
   hosts: all
   tasks:
+    # Change this to the role you wish to test against and any additional vars you wish to change.
     - name: "Include Role"
       include_role:
         name: "default"

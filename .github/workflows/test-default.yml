@@ -1,8 +1,9 @@
 ---
+# Provide a meaningful name here it makes Gihub output clearer.
 name: "test-default"
 on:
   push:
-    # Set the paths you wish to trigger the workflow here
+    # Set the paths you wish to trigger the workflow here.
     paths:
       - 'roles/**'
       - 'tests/integration/**'
@@ -10,7 +11,7 @@ on:
     branches:
       - main
   pull_request:
-    # Set the paths you wish to trigger the workflow here
+    # Set the paths you wish to trigger the workflow here.
     paths:
       - 'roles/**'
       - 'tests/integration/**'
@@ -26,11 +27,11 @@ jobs:
       matrix:
         molecule_distro:
           - distro: rhel8
-            # On Github we use the docker driver because podman on Ubuntu seems to have issues with systemd containers
+            # On Github we use the docker driver because podman on Ubuntu seems to have issues with systemd containers.
             molecule_driver: docker
             image: registry.access.redhat.com/ubi8/ubi-init
             command: /sbin/init
-        # These are your molecule scenarios, at minimum have one per role in your collection
+        # These are your molecule scenarios, at minimum have one per role in your collection.
         collection_scenario:
           - default
 
