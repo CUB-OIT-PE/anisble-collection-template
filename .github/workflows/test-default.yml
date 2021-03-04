@@ -2,14 +2,7 @@
 # Provide a meaningful name here it makes Gihub output clearer.
 name: "test-default"
 on:
-  push:
-    # Set the paths you wish to trigger the workflow here.
-    paths:
-      - 'roles/**'
-      - 'tests/integration/**'
-      - '.github/workflows/test.yml'
-    branches:
-      - main
+  # Our workflow encourages/requires PRs, to save resources we only test on PR not push.
   pull_request:
     # Set the paths you wish to trigger the workflow here.
     paths:
