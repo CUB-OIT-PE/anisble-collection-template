@@ -1,0 +1,1 @@
+It is not completley clear why a README is required here, perhaps there is a good reason... Anyway here is a README to satisfy ansible-lint on galaxy.
